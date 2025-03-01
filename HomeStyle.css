@@ -1,0 +1,322 @@
+body{   
+    display: grid;
+    padding-left: 50px; 
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color:#1f204e;
+  
+}
+
+/* Remove white space at the top */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header with rounded bottom edge */
+header {
+    /* Allows nav to be positioned on top */
+    position: relative; 
+    padding: 0;
+    margin: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* Ensures the image follows the rounded border */
+    overflow: hidden; 
+}
+
+/* Style the image inside the header */
+header img {
+    width: 100%;
+    height: auto;
+    /* Removes extra space under the header image */
+    display: block; 
+}
+
+/* Navigation styling */
+nav.navigations {
+    position: absolute; /* Places nav over the image */
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    
+}
+
+/* Navbar links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+}
+
+/* Active link */
+.navbar a.active {
+    background-color: #ccdee1;
+    color: #04182e;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: #5394a09d;
+    color: #052236;
+}
+
+/* title section */
+#title {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything horizontally */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Styling for h1 */
+#title h1 {
+    font-weight: 800;
+    font-size: 100px; 
+    letter-spacing: 4px; /* Adds spacing for better look */
+    color: #d8d9de;
+    margin-bottom: 10px;
+}
+
+/* Styling for p */
+#title p {
+    font-size: 22px;
+    font-weight: normal;
+    color: #1b8593;
+    max-width: 600px;
+    line-height: 1.8;
+    font-style: italic; 
+    background: linear-gradient(to right, #1f204e00, #27689900, #1b859300, #4a908600);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0);
+
+
+}
+
+
+/* Name section */
+#Name {
+    display: grid;
+    place-items: center; 
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Styling for h2 */
+#Name h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: hsl(0, 100%, 100%);
+    margin: 0;
+}
+
+/* Styling for h4 */
+#Name h4 {
+    font-size: 24px;
+    color: #fffafa;
+    margin: 10px 0 0 0;
+    font-weight: normal;
+}
+
+/* Grid container */
+#Summary {
+    display: grid;
+    gap: 10px; /* Space between elements */
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+/* Styling h2 */
+#Summary h2 {
+    background: linear-gradient(45deg, #1f204e, #276899, #1b8593, #4a9085);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    width: fit-content;
+    margin: auto;
+    box-shadow: 2px 2px 5px #171736;
+}
+
+/* Styling paragraph */
+#Summary p {
+    background-color: rgba(255, 255, 255, 0.486);
+    color: #dadae1;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    box-shadow: 2px 2px 5px rgba(9, 67, 99, 0.938);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Footer container */
+#footerEnd {
+    display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    gap: 15px;
+    padding: 30px;
+    background: linear-gradient(45deg, #1f204e, #276899, #1b8593, #4a9085);
+    color: white;
+    text-align: center;
+    height: 100%; /* Ensures it takes up full height if needed */
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 30px;
+
+}
+
+/* Footer heading */
+#footerEnd h3 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Links container */
+.links {
+    display: grid;
+    gap: 10px;
+    justify-items: center; /* Ensures links are centered */
+}
+
+/* Each link styling for the linktree */
+#footerEnd a {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Icon styling */
+#footerEnd a i {
+    font-size: 22px;
+}
+
+/* Hover effect */
+#footerEnd a:hover {
+     background: rgba(255, 255, 255, 0.4);
+     transform: scale(1.05);
+}
+
+
+h3{
+     background: linear-gradient(45deg, #1f204e, #276899, #1b8593, #4a9085);
+     color: white;
+     padding: 10px 20px;
+     border-radius: 10px;
+     font-size: 30px;
+     font-weight: bold;
+     width:max-content;
+     margin-bottom: 20px;
+     margin-top: 20px;
+     margin-left: 15px;
+     box-shadow: 2px 2px 5px #171736;
+}
+
+p{
+    background: linear-gradient(to right, #1f204e42, #2768994e, #1b859342, #4a908652);
+    color: #d6d6da;
+    font-weight: bold;
+    padding: 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    box-shadow: 2px 2px 5px rgba(9, 67, 99, 0.938);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+li{
+    color: rgba(88, 110, 122, 0.938);
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+
+details {
+    display: grid;
+    gap: 10px; 
+    background: linear-gradient(to right, #1f204e42, #2768994e, #1b859342, #4a908652);
+    color: #d6d6da;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+summary {
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+summary::marker {
+    display: none; 
+}
+
+summary::before {
+    content: "> ";
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+details[open] summary::before {
+    content: "▼ ";
+}
+
+details p {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+ video {
+    border: 4px solid #1b85933e;
+    border-radius: 5px;
+    width: 100%; /* Responsive */
+    max-width: 640px;
+    margin: 0 auto; /* Centers the video */
+    display: block; /* Ensures it respects margin auto */
+  }
+  details img{
+    border: 4px solid #1b85933e;
+    border-radius: 5px;
+    max-width: 640px;
+    margin: 0 auto; /* Centers the video */
+    display: block; /* Ensures it respects margin auto */
+
+  }
