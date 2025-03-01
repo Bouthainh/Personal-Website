@@ -1,5 +1,6 @@
 body{   
     display: grid;
+    grid-template-rows: auto 1fr auto;
     padding-left: 50px; 
     font-family: "Lucida Console", "Courier New", monospace;
     background-color:#1f204e;
@@ -320,3 +321,80 @@ details p {
     display: block; /* Ensures it respects margin auto */
 
   }
+/*addding @media to adjust size for responsive design*/
+/* 576px (small screens) */
+@media screen and (max-width: 576px) {
+    #title h1 {
+        font-size: 50px; 
+    }
+
+    #title p {
+        font-size: 16px; 
+        padding: 10px;
+    }
+
+    #Name h2 {
+        font-size: 15px;
+    }
+     p {
+        font-size: 8px;
+    }
+
+    h3{
+        font-size: 10px;
+    }
+
+    #Summary {
+        width: 90%;
+    }
+    #Summary p{
+        font-size: 10px;
+
+    }
+
+    p, details {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* 768px */
+@media screen and (max-width: 768px) {
+    #title h1 {
+        font-size: 80px; 
+    }
+
+    #title p {
+        font-size: 20px;
+        max-width: 80%;
+    }
+
+    #Name h2 {
+        font-size: 32px;
+    }
+
+    #Summary {
+        width: 80%;
+    }
+   
+
+
+    video {
+        max-width: 100%; 
+    }
+}
+
+/* Large Screens: 992px */
+@media screen and (max-width: 992px) {
+    #title h1 {
+        font-size: 90px;
+    }
+
+    #title p {
+        max-width: 70%;
+    }
+
+    #Summary {
+        width: 75%;
+    }
+}
